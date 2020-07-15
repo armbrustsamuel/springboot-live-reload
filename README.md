@@ -1,5 +1,10 @@
 # Springboot Live Reload Example
 
+To run, simply execute the following command:
+```terminal
+docker-compose up
+```
+
 1. Basically add this configuration in the `docker-compose.yml`
 ```
 version: '3'
