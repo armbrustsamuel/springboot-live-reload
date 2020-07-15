@@ -20,19 +20,13 @@ public class LiveReloadApplication {
 		return "The current time is " + new Date();
 	}
 
-	@RequestMapping(method = RequestMethod.GET, path = "/samuel")
-	@ResponseBody
-	public String answer() {
-		return "Meu pelicano";
-	}
-
-	@RequestMapping(method = RequestMethod.GET, path = "/taxi")
+	@RequestMapping(method = RequestMethod.GET, path = "/usuario")
 	@ResponseBody
 	public Pessoa taxi() {
-		Pessoa samuel = new Pessoa();
-		samuel.setNome("Samuel");
-		samuel.setIdade(26);
-		return samuel;
+		Pessoa usuario = new Pessoa();
+		usuario.setNome("Usuario");
+		usuario.setIdade(26);
+		return usuario;
 	}
 
 	public static void main(String[] args) {
